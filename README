@@ -1,0 +1,14 @@
+Task 1:     -Dupa ce citesc numarul de instructiuni, salvez restul expresiiei intr-o variabila auxiliara pe care o folosec mai departe
+            -Pentru fiecare operatie creez cate o masca cu codul operatiei aflat shiftat pe primii 2 biti
+            -Cu XOR intre aux si mastile pt operatii identific prima operatie aflata in aux, afisez, si dupa elimin operatia din aux (<<)
+             continui asa pana interpretez toate operatiile
+            -Bitii ramasi pe primele 4 pozitii din aux corespund dimensiunii
+
+Task 2:     -Dupa ce citesc numarul de instructiuni, salvez restul expresiiei intr-o variabila auxiliara pe care o folosec mai departe
+            -Pentru a afla dimensiunea caut sa aduc bitii pentru dimensiune pe ultimele 4 pozitii. 
+             Primii 2*(N+2) biti din aux contin operatiile si secventa. Shiftez pe aux pentru a aduce acei 2*(N+2) biti pe ultimele pozitii
+             si cu masca  1111 citesc doar ultimi 4 biti (cei pentru dimensiune)
+            -Calculez numarul de shorturi care trebuie citit
+            -Fiecare short citit il interpretez operand cu operand si ma opresc din citit si interpretat daca am atins numarul de operanzi (asta pentru cand ultimul sort e incomplet); 
+             daca Dim == 16, interpretez short cu short
+            -Efectuez operatiile
